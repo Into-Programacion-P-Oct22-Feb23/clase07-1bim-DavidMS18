@@ -9,19 +9,18 @@ package manejocadenas;
  *
  * @author reroes
  */
-public class DemoCadenas03 {
+public class DemoCadenas031 {
     public static void main(String[] args) {
-        String pais = "Ecuador";
-        String ciudad = "Loja";
-        String fechaIndependencia = "18 de noviembre";
+        String nombre = "Ariel David";
+        String apellido = "Montoya";
+        int edad = 19;
         String cadenaAcumuladora = "Datos Personales\n";
         
-        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, pais);
+        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, nombre);
         //%s para rem´plazar con variables
-        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, ciudad);
-        
-        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, 
-                fechaIndependencia);
+        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora, apellido);
+        //acumular cadena es "variable(en este caso)cadenaAcumuladora = String.format()"
+        cadenaAcumuladora = String.format("%s%s\n", cadenaAcumuladora,edad);
         
         System.out.printf("%s", cadenaAcumuladora);
         

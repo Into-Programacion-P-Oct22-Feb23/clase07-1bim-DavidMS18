@@ -30,7 +30,7 @@ public class Ejemplo08 {
         boolean bandera = true;
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
-        while (bandera) {
+        while (bandera) {//(bander == true) 
             System.out.println("Ingrese calificación:");
             calificacion = entrada.nextDouble();
             suma_total = suma_total + calificacion;
@@ -38,7 +38,7 @@ public class Ejemplo08 {
 
             entrada.nextLine(); // Ojo usamos el limpiador del scanner (buffer)
 
-            // proceso para salir del ciclo.
+            // proceso para salir del ciclo y acabar con el programa.
             System.out.println("Ingrese si para salir");
             String temporal = entrada.nextLine();
             if (temporal.equals("si")) {
